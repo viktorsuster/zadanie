@@ -424,3 +424,85 @@ body {font-family: Verdana, sans-serif;}
   color: #aaaaaa;
   line-height: normal;
 }
+
+/* Footer section */
+
+footer {
+  border-top: 2px solid #98b54f;
+}
+
+.footer-nav {
+  display: flex;
+  width: 55vw;
+  list-style-type: none;
+  margin: auto;
+  justify-content:space-evenly;
+}
+
+.footer-nav a {
+  color:black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 10px;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+  margin-bottom: 0;
+}
+
+.footer-nav a:hover {
+  color:teal;
+  transition: color 0.6s ease;
+}
+
+.footer-nav .logo {
+  background-image: url(icons/promiseo-logo.svg);
+  background-repeat: no-repeat;
+  background-position-y: 0.5rem;
+  width: 220px;
+  height: 30px;
+  float: left;
+}
+
+.footer-icons {
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.left-contact-section {
+  background-color: #98b54f;
+  color: #515967;
+  font-size: 12px;
+  text-indent: -100px;
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center;
+  margin: auto;
+  float: left;
+  width: 60%;
+  height: 50px;
+}
+
+.right-contact-section {
+  background-color: #515967;
+  display: inline-flex;
+  align-items: center; 
+  justify-content:flex-start;
+  margin: auto;
+  float: right;
+  width: 40%;
+  height: 50px;
+}
+
+.contact-icons {
+  display: block;
+  width: auto;
+  height: 20px;
+  margin-left: 5px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  text-indent: 20px;
+  font-size: 12px;
+  background-size: 15px 15px;
+  color: white;
+}
