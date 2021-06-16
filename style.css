@@ -246,3 +246,98 @@ body {font-family: Verdana, sans-serif;}
   from {opacity: 0;}
   to {opacity: 1;}
 }
+
+/* Aliquam section */
+
+.aliquam-section {
+  display: inline-flex;
+  background-color: #8cbbbc;
+  width: 100%;
+  height: 400px;
+}
+
+.aliquam-left {
+  background-color: #515967;
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center;
+  margin: auto;
+  float: left;
+  width: 45%;
+  height: 100%;
+}
+
+.aliquam-left-section {
+  width: 350px;
+  height: 300px;
+  margin-right: -350px;
+}
+
+.aliquam-left-section span {
+  color: white;
+  font-size: 30px;
+  margin-left: -100px;
+}
+
+.aliquam-left-inside {
+  margin-top: 40px;
+  display:block;
+  float: left;
+  width: 20%;
+  height: 300px;
+}
+
+.speech-bubble {
+  background-image: url(icons/speech-bubble.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+.speech-bubble img {
+  width: 25px;
+}
+
+.aliquam-right-inside {
+  display: block;
+  float: right;
+  margin-top: 4px;
+  width: 80%;
+  height: 350px;
+}
+
+.aliquam-option {
+  color: #81b5b6;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.aliquam-more {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.aliquam-right {
+  background-image: url(aliquamCover.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center;
+  margin: auto;
+  float: right;
+  width: 55%;
+  height: 100%;
+}
+
+.aliquam-right span {
+  color: white;
+  font-size: 25px;
+  margin-left: -300px;
+}
