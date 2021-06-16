@@ -3,17 +3,22 @@ body {
   margin: 0;
 }
 
-/* Logo & Menu */
+/* Logo & Menu start */
 
-.half-border {
+#myProgress {
   width: 100%;
+  background-color: #e1e1e1;
+}
+
+#myBar {
+  width: 1%;
   height: 3px;
-  background:linear-gradient(to right, #98b54f 60%, #e1e1e1 40%);
+  background-color: #98b54f;
 }
 
 .main-nav {
   display: flex;
-  width: 55vw;
+  width: 55%;
   list-style-type: none;
   margin: auto;
   justify-content:space-evenly;
@@ -24,9 +29,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 10px;
 	display: block;
-	padding: 15px;
+	padding: 10px;
 	text-decoration: none;
-  margin-bottom: 0;
 }
 
 .main-nav a:hover {
@@ -40,12 +44,11 @@ body {
   background-position-y: 0.5rem;
   width: 220px;
   height: 30px;
-  float: left;
 }
 
-/* Logo & Menu */
+/* Logo & Menu end */
 
-/* section slide */
+/* section slide start */
 
 .cover {
   background-image: url(cover.jpg);
@@ -140,14 +143,9 @@ body {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
+/* section slide end */
 
-/* section slide */
-
-/* Lorem ipsum part */
+/* Lorem ipsum part start */
 
 .promiseo-cover {
   margin: 0;
@@ -176,23 +174,26 @@ body {
 }
 
 .section-text {
-  width: 50vw;
+  width: 50%;
   margin: auto;
   font-size: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* Tab section */
+/* Tab section start */
 
 .tab {
-  width: 70vw;
+  display: flex;
+  justify-content: center;
+  width: 70%;
   margin: auto;
   margin-top: 20px;
   text-align: center;
 }
 
-.tab h1 {
+.cras-lobortis {
+  text-align: center;
   color: #123f69;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: lighter;
@@ -272,8 +273,7 @@ body {
 
 .aliquam-left-section {
   width: 350px;
-  height: 300px;
-  margin-right: -350px;
+  height: 300px; 
 }
 
 .aliquam-left-section span {
@@ -342,7 +342,6 @@ body {
 .aliquam-right span {
   color: white;
   font-size: 25px;
-  margin-left: -300px;
 }
 
 /* Blog section */
@@ -406,8 +405,13 @@ body {
   margin-left: 190px;
   margin-top: 230px;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 25px;
   cursor: pointer;
+}
+
+.plus-icon {
+  width:25px;
+  height:25px;
+  filter: invert(1);
 }
 
 .flex-container .blog-text {
@@ -436,7 +440,7 @@ footer {
 
 .footer-nav {
   display: flex;
-  width: 55vw;
+  width: 55%;
   list-style-type: none;
   margin: auto;
   justify-content:space-evenly;
@@ -507,5 +511,71 @@ footer {
   text-indent: 20px;
   font-size: 12px;
   background-size: 15px 15px;
-  color: white;
+  filter: invert(1);
+  color: black;
+}
+
+/* responsively */
+
+@media screen and (max-width : 760px){
+  .main-nav {
+    width: 100%;
+    font-size: 11px;
+  }
+  .main-nav .logo {
+    width: 100px;
+    background-size: 100px;
+    display:flex;
+  }
+  .slide-text {
+    font-size: 20px;
+  }
+  .section-text {
+    width: 100%;
+  }
+  .main-nav a {
+    padding: 5px;
+    margin: 5px;
+  }
+  .flex-container {
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 480px) {
+  .tablinks {
+    font-size: 12px;
+    width: 35px;
+    height: 25px;
+  }
+  .section-text {
+    width: 100%;
+  }
+  .contact-icons {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  body {
+    margin:1.5em 0;      
+  }
+  .text {font-size: 11px}
+  .slide-text {
+    font-size: 15px;
+  }
+  .tablinks {
+    font-size: 11px;
+    width:auto;
+    height:auto;
+  }
+  .contact-icons {
+    font-size: 8px;
+  }
+  .flex-container {
+    overflow-x: scroll;
+  }
+  .section-text {
+    width: 100%;
+  }
 }

@@ -1,3 +1,26 @@
+// progress bar
+
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 50);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+
+// slider
+
 var slideIndex = 0;
 showSlides();
 
@@ -19,8 +42,11 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+  move();
+  setTimeout(showSlides, 5000);
 }
+
+// tab
 
 function openTab(e, tabName) {
   var i, tabcontent, tablinks;

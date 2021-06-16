@@ -8,6 +8,7 @@
     <title>Promiseo</title>
 </head>
 <body>
+  
 <!-- Navigation section -->
   <nav>
     <ul class="main-nav">
@@ -21,7 +22,9 @@
       <li><a href="#">Item7</a></li>
     </ul>
   </nav>
-  <div class="half-border"></div>
+  <div id="myProgress">
+    <div id="myBar"></div>
+  </div>
 
 <!-- Slider section -->
 
@@ -77,15 +80,16 @@
   </div>
 </div>
 
+<h1 class="cras-lobortis">Cras lobortis ?</h1>
+
 <div class="tab">
-  <h1>Cras lobortis ?</h1>
   <div class="tablinks" id="defaultOpen" onclick="openTab(event, 'First')">1</div>
   <div class="tablinks" onclick="openTab(event, 'Second')">2</div>
   <div class="tablinks" onclick="openTab(event, 'Third')">3</div>
-  <div class="tablinks">4</div>
-  <div class="tablinks">5</div>
-  <div class="tablinks">6</div>
-  <div class="tablinks">7</div>
+  <div class="tablinks" onclick="openTab(event, 'Fourth')">4</div>
+  <div class="tablinks" onclick="openTab(event, 'Fifth')">5</div>
+  <div class="tablinks" onclick="openTab(event, 'Sixth')">6</div>
+  <div class="tablinks" onclick="openTab(event, 'Seventh')">7</div>
 </div>
 
 <div id="First" class="tabcontent">
@@ -98,6 +102,18 @@
 
 <div id="Third" class="tabcontent">
   <p>Integer auctor ipsum vitae nisi facilisis venenatis. Nam nec eros posuere, consequat arcu viverra, accumsan sapien.</p>
+</div>
+<div id="Fourth" class="tabcontent">
+  <p>Vestibulum at erat non lorem imperdiet interdum a non lorem.</p>
+</div>
+<div id="Fifth" class="tabcontent">
+  <p>Integer faucibus id lacus eu placerat. Sed at nibh odio.</p>
+</div>
+<div id="Sixth" class="tabcontent">
+  <p>Sed vehicula ultricies fringilla. Curabitur ac fermentum massa, eu lacinia orci.</p>
+</div>
+<div id="Seventh" class="tabcontent">
+  <p>Praesent porttitor ex quam, sit amet tempor nunc dignissim facilisis. Aenean eget condimentum nibh, eu hendrerit leo.</p>
 </div>
 <!-- Aliquam section -->
 <div class="aliquam-section">
@@ -135,21 +151,21 @@
 <div class="flex-container">
   <div class="first-blog">
     <div class="plus-btn">
-      <img src="icons/plus.svg" alt="More">
+      <img class="plus-icon" src="icons/plus.svg" alt="More">
     </div>
     <p class="blog-text">Aenean a consequat ex, et tincidunt ligula</p>
     <p class="date-text">&#8212; 16. Máj 2007</p>
   </div>
   <div class="second-blog">
     <div class="plus-btn">
-      <img src="icons/plus.svg" alt="More">
+      <img class="plus-icon" src="icons/plus.svg" alt="More">
     </div>
     <p class="blog-text">Maecenas odio odio, auctor fringilla dui id, sollicitudin aliquet ipsum</p>
     <p class="date-text">&#8212; 16. Máj 2007</p>
   </div>
   <div class="third-blog">
     <div class="plus-btn">
-      <img src="icons/plus.svg" alt="More">
+      <img class="plus-icon" src="icons/plus.svg" alt="More">
     </div>
     <p class="blog-text"> Curabitur ante dolor, suscipit nec urna nec, lobortis pharetra ligula</p>
     <p class="date-text">&#8212; 16. Máj 2007</p>
@@ -179,7 +195,7 @@
     <a href="#message" style="background-image: url(icons/message.svg);" class="contact-icons">
       hi@emailhallo.sk
     </a>
-    <a href="#web" style="background-image: url(icons/web.svg); fill: white;" class="contact-icons">
+    <a href="#web" style="background-image: url(icons/web.svg);" class="contact-icons">
       randomseo.sk
     </a>
   </div>
