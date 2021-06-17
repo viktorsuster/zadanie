@@ -635,6 +635,9 @@ footer {
   .flex-container {
     overflow-x: scroll;
   }
+  .center-header {
+    width: 100%;
+  }
 }
 
 /* 48em = 768px */
@@ -662,11 +665,18 @@ footer {
     width: 35px;
     height: 25px;
   }
+  .center-header {
+    width: 100%;
+  }
   .section-text {
     width: 100%;
   }
   .contact-icons {
     font-size: 10px;
+  }
+  .flex-container {
+    overflow-x: scroll;
+    justify-content:start;
   }
 }
 
