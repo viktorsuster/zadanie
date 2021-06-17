@@ -283,6 +283,7 @@ body {
 
 .tab {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 70%;
   margin: auto;
@@ -329,7 +330,7 @@ body {
 
 /* Style the tab content */
 .tabcontent {
-  width: 70vw;
+  width: 70%;
   text-align: center;
   margin: auto;
   display: none;
@@ -670,6 +671,9 @@ footer {
   .slide-text {
     font-size: 15px;
   }
+  .center-header {
+    width: 100%;
+  }
   .header li a {
     font-size: 9px;
   }
@@ -681,13 +685,23 @@ footer {
     padding: 3px;
     font-size: 11px;
   }
+  .tab {
+    width: 100%;
+  }
   .tablinks {
     font-size: 12px;
+    padding: 5px 8px 5px 8px;
     width:auto;
     height:auto;
+    margin: 5px;
+  }
+  .tabcontent {
+    width: 100%;
+    font-size: 9px;
+    padding: 0;
   }
   .cover {
-    height: 250px;
+    height: 300px;
   }
   .logo {
     background-size: 80px;
@@ -740,5 +754,8 @@ footer {
   }
   .right-contact-section {
     width: 70%;
+  }
+  .cras-lobortis {
+    font-size: 25px;
   }
 }
