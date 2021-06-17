@@ -659,13 +659,25 @@ footer {
   }
 }
 
-@media (max-width: 48em) {
+@media (max-width: 28em) {
   .center-header {
     width: 100%;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .header li a {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .center-header {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
   .tablinks {
     font-size: 12px;
     width: 35px;
@@ -683,6 +695,67 @@ footer {
   .flex-container {
     overflow-x: scroll;
     justify-content:start;
+  }
+  .tab {
+    width: 100%;
+  }
+  .tablinks {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 2px 0 2px 0;
+  }
+  .flex-container {
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+  .aliquam-left-section span {
+    font-size: 12px;
+    margin-left: 0;
+  }
+  .section-text {
+    width: 100%;
+    font-size: 10px;
+  }
+  .speech-bubble {
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    margin-top: -5px;
+    margin-bottom: 45px;
+  }
+  .speech-bubble img {
+    width: 10px;
+    height: 10px;
+  }
+  .aliquam-option {
+    font-size: 9px;
+    margin-top: 15px;
+  }
+  .aliquam-more {
+    font-size: 8px;
+    margin-top: 2px;
+  }
+  .footer-nav {
+    display: none;
+  }
+  .contact-section {
+    height: 60px;
+  }
+  .left-contact-section {
+    width: 30%;
+    font-size: 9px;
+    justify-content: flex-end;
+    text-indent: 0;
+  }
+  .right-contact-section {
+    width: 70%;
+    display: block;
+  }
+  .cras-lobortis {
+    font-size: 25px;
+  }
+  .aliquam-right span {
+    font-size: 15px;
   }
 }
 
