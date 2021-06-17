@@ -659,6 +659,12 @@ footer {
   }
 }
 
+@media (max-width: 48em) {
+  .center-header {
+    width: 100%;
+  }
+}
+
 @media (max-width: 480px) {
   .tablinks {
     font-size: 12px;
