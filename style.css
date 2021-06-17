@@ -575,6 +575,10 @@ footer {
   height: 30px;
 }
 
+.contact-section {
+  height: 50px;
+}
+
 .left-contact-section {
   background-color: #98b54f;
   color: #515967;
@@ -586,7 +590,7 @@ footer {
   margin: auto;
   float: left;
   width: 60%;
-  height: 50px;
+  height:100%;
 }
 
 .right-contact-section {
@@ -597,7 +601,7 @@ footer {
   margin: auto;
   float: right;
   width: 40%;
-  height: 50px;
+  height:100%;
 }
 
 .contact-icons {
@@ -720,19 +724,25 @@ footer {
   }
   .flex-container {
     overflow-x: scroll;
+    justify-content: flex-start;
+  }
+  .aliquam-left-section span {
+    font-size: 12px;
+    margin-left: 0;
   }
   .section-text {
     width: 100%;
     font-size: 10px;
   }
   .speech-bubble {
-    background-size: 30px;
-    width: 30px;
-    height: 30px;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    margin-top: 40px;
   }
   .speech-bubble img {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
   }
   .aliquam-option {
     font-size: 9px;
@@ -748,14 +758,23 @@ footer {
   .footer-nav {
     display: none;
   }
+  .contact-section {
+    height: 60px;
+  }
   .left-contact-section {
     width: 30%;
     font-size: 9px;
+    justify-content: flex-end;
+    text-indent: 0;
   }
   .right-contact-section {
     width: 70%;
+    display: block;
   }
   .cras-lobortis {
     font-size: 25px;
+  }
+  .aliquam-right span {
+    font-size: 15px;
   }
 }
